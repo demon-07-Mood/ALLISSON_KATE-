@@ -21,24 +21,21 @@ def reproducir_musica(archivo_audio):
         pass
 
 # 3. ESTILO CSS Y ANONIMATO
+# Busca esta sección en tu código y asegúrate de que incluya estas líneas:
 st.markdown("""
     <style>
+    /* Oculta el encabezado y el menú */
     header {visibility: hidden;}
     #MainMenu {visibility: hidden;}
-    footer {visibility: hidden;}
-    [data-testid="stSidebarNav"] {display: none;}
-    .stApp { background-color: #ffb6c1; }
     
-    h1, h2, h3, p { 
-        color: #8b0000 !important; 
-        font-family: 'Comic Sans MS', cursive !important; 
-        text-align: center;
-    }
-    .mensaje-card {
-        background-color: rgba(255, 255, 255, 0.9); padding: 20px;
-        border-radius: 20px; border: 2px solid #ff69b4;
-        color: #8b0000; text-align: center;
-    }
+    /* ESTO ES LO QUE BORRA EL "Created by leandro-ph" */
+    footer {visibility: hidden;}
+    .viewerBadge_container__1QS1n {display: none !important;}
+    stDecoration {display:none !important;}
+    
+    /* Cambia el color de fondo y letras */
+    .stApp { background-color: #ffb6c1; }
+    h1, h2, h3, p { color: #8b0000 !important; }
     </style>
     """, unsafe_allow_html=True)
 
