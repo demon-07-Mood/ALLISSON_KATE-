@@ -63,7 +63,7 @@ else:
     
     # Música y Título
     reproducir_musica("musica.mp3")
-    st.title("🌸 Un detalle para mi Allisson 🌸")
+    st.title("🌸 Detalle para mi Allisson 🌸")
 
     # Imagen de Hello Kitty (local según image_cdb14a.png)
     st.image("hello_kity.gif", use_container_width=True)
